@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Link for jquery required for bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+
+
+
+  <title>Multi Watch</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="styles/stopwatch.css">
+</head>
+
+<!-- Modal for showing Notes-->
+<div class="modal fade" id="notesModal" tabindex="-1" role="dialog" aria-labelledby="notesModalTitle">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title text-center"><strong id="notesModalTitle">to be filled by function </strong></h2>
+      </div>
+      <div class="modal-body" id="notesModalBody">
+        <p> to be filled by function</p>
+      </div>
+      <hr>
+      <div class="modal-footer" id="notesModalFooter">
+        <p> to be filled by function </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<body class='container'>
+  <div class="row">
+    <div class="container-fluid">
+      <h1 class="page-header text-center"> Multi Stop Watch </h1>
+      <div class="input-group">
+        <input id='title' type='text' class="form-control" placeholder="Enter title for StopWatch" />
+        <span class="input-group-btn">
+          <button id="addWatch-btn" class="form-control btn btn-primary"><span class="glyphicon glyphicon-plus"></span>
+            Add stopwatch </button>
+        </span>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!--container for Stopwatches -->
+  <div class="row" id="stopwatches">
+
+  </div>
+
+  <hr>
+  <div class="row">
+    <p class="col-md-offset-5 btn btn-danger btn-lg" id="removeAll-btn"><span
+        class="glyphicon glyphicon-remove"></span>REMOVE ALL</p>
+  </div>
+
+  <script src="scripts/stopwatch.js"></script>
+
+</body>
+
+</html>
